@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a0af01dd93f7ba56",
+        "id": "1e50e7a014c4b529",
         "type": "tabs",
         "children": [
           {
-            "id": "c11ad92769c9582a",
+            "id": "e342cefc2fbb079e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "src/part1.1/readme.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -147,8 +147,12 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "c11ad92769c9582a",
+  "active": "e342cefc2fbb079e",
   "lastOpenFiles": [
+    "src/part1.1/assets/dbeaver_connections.png",
+    "src/part1.1/assets/dvd-rental-erd.png",
+    "src/part1.1/assets/select_from_country.png",
+    "src/part1.1/readme.md",
     "README.md"
   ]
 }
