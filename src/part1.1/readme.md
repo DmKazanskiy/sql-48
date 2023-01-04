@@ -24,7 +24,7 @@
 
 **Задание 1. Создайте новое соединение в DBeaver и подключите облачную базу данных dvd-rental**
 
-![[assets/dbeaver_connections.png]]
+![](assets/dbeaver_connections.png)
 
 **Задание 2. Сформируйте ER-диаграмму таблиц базы данных dvd-rental**
 
