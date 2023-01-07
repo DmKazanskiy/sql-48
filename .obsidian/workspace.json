@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/part1.2/readme.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/part1.2/readme.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/part1.2/readme.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/part1.2/readme.md"
+                "file": "README.md"
               }
             }
           }
@@ -174,11 +174,11 @@
   },
   "active": "44d4aa3ef598e77f",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "src/part1.2/readme.md",
-    "src/part1.2/m2-utf8.sql.md",
     "src/part1.1/readme.md",
     "README.md",
+    "src/part1.2/readme.md",
+    "conflict-files-obsidian-git.md",
+    "src/part1.2/m2-utf8.sql.md",
     "src/part1.1/assets/dbeaver_connections.png",
     "src/part1.1/assets/dvd-rental-erd.png",
     "src/part1.1/assets/select_from_country.png"
