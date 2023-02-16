@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "src/part1.6/readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "597af10c7a4a5955",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/part1.6/readme.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "src/part1.6/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "src/part1.6/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "src/part1.6/readme.md"
               }
             }
           }
@@ -160,17 +172,17 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "d6a637ab29851cb3",
+  "active": "597af10c7a4a5955",
   "lastOpenFiles": [
-    "src/part1.4/readme.md",
+    "src/part1.1/assets/d2sample.md",
+    "src/part1.3/readme.md",
+    "src/part1.6/readme.md",
     "README.md",
+    "src/part1.4/readme.md",
     "src/part1.5/readme.md",
     "src/part1.2/readme.md",
-    "src/part1.3/readme.md",
     "src/part1.1/readme.md",
     "conflict-files-obsidian-git.md",
-    "src/part1.2/m2-utf8.sql.md",
-    "src/part1.1/assets/dbeaver_connections.png",
-    "src/part1.1/assets/dvd-rental-erd.png"
+    "src/part1.2/m2-utf8.sql.md"
   ]
 }
