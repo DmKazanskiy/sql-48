@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/part1.6/readme.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/part1.6/readme.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/part1.6/readme.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/part1.6/readme.md"
+                "file": "README.md"
               }
             }
           }
@@ -174,9 +174,9 @@
   },
   "active": "597af10c7a4a5955",
   "lastOpenFiles": [
+    "src/part1.6/readme.md",
     "src/part1.1/assets/d2sample.md",
     "src/part1.3/readme.md",
-    "src/part1.6/readme.md",
     "README.md",
     "src/part1.4/readme.md",
     "src/part1.5/readme.md",

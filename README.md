@@ -6,4 +6,4 @@
 4. [Домашнее задание по теме "Углубление в SQL";](src/part1.4/readme.md)
 5. [Домашнее задание по теме «Работа с PostgreSQL» (часть 1);](src/part1.5/readme.md)
 6. [Домашнее задание по теме "Работа с PostgreSQL(часть 2);](src/part1.6/readme.md)
-7. 
+7.  [Итоговая работа.](sql48-total-bookings.sql)
