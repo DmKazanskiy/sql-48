@@ -3,6 +3,8 @@ SET search_path to bookings,public;
 
 -- 1 
 --- Какие самолеты имеют более 50 посадочных мест?
+--- 20230222_ДХ: 10
+---
 select *
 from(
 	select 	 aircraft_code , count(seat_no) 
@@ -16,12 +18,14 @@ where count > 50
 --2 
 --- В каких аэропортах есть рейсы, в рамках которых можно добраться бизнес - классом дешевле, чем эконом - классом?
 --- CTE
-
-
+--- 20230222_ДХ: 0
+---
 
 --3
 ---Есть ли самолеты, не имеющие бизнес - класса?
 --- array_agg
+--- 20230222_ДХ: 15
+---
 
 select 	 aircraft_code , array_agg(fare_conditions) stat
 	from (
@@ -39,6 +43,9 @@ select 	 aircraft_code , array_agg(fare_conditions) stat
 --- Оконная функция
 --- Подзапрос
 --
+-- 20230222_ДХ: 5. Отсутствует накопительный итог согласно условия задания.
+--
+
 with t as (
 select flight_id , max(boarding_no) passengers_cnt
 from boarding_passes bp 
@@ -72,6 +79,8 @@ from r
 ---Выведите в результат названия аэропортов и процентное отношение.
 --- Оконная функция
 --- Оператор ROUND
+--- 20230222_ДХ: 0. Сумма процентов должна быть равна 100, чему равна у Вас? Разберитесь отношение чего нужно найти.
+---
 with t as (
 	select f.flight_no 
 		   ,a1.airport_name airport_src
@@ -88,6 +97,8 @@ group by t.flight_no, t.airport_src, t.airport_dst
 
 --6
 ---Выведите количество пассажиров по каждому коду сотового оператора, если учесть, что код оператора - это три символа после +7
+--- 20230222_ДХ: 15
+---
 with cell_users as (
 	select ticket_no
 		,case when substring(contact_data ->> 'phone' from 1 for 2) like '+7' then substring(contact_data ->>'phone'::varchar from 3 for 3)  
@@ -114,6 +125,10 @@ from cell_users
 --- Между какими городами не существует перелетов?
 --- Декартово произведение
 --- Оператор EXCEPT
+--- 20230222_ДХ: 0. Так как есть города в которых по несколько аэропортов, то изначальная работа с аэропортами приводит к ложным данным. 
+--- То есть в airports_pair_city ложные пары городов. 
+--- flights_pair - лишний шаг, так как в flights_pair_city делаете тоже самое.
+---
 with airports_pair(airport_src,airport_dst) as ( -- count rows = 5356
 	select a.airport_code airport_src, a2.airport_code airport_dst
 	from airports a
@@ -153,6 +168,10 @@ from flights_pair_city f
 ---От 150 млн включительно - high
 ---Выведите в результат количество маршрутов в каждом классе.
 --- Оператор CASE
+--- 20230222_ДХ: 0. 
+--- В условии теряете данные. Поиск подстроки в строке - заведомо ложная работа с данными.
+--- Нет ответа на вопрос, где должно быть количество маршрутов в получившихся классах.
+---
 
 with routes_info(num,num_id,grade,amnt,stat) as (
 	select f.flight_no num, tf.flight_id num_id , tf.fare_conditions grade, tf.amount amnt, f.status stat 
@@ -179,6 +198,9 @@ group by num
 --	где 
 -- 	latitude_a и latitude_b — широты пункта А и Б (радианы)
 -- 	longitude_a, longitude_b — долготы пункта А и Б(радианы)
+--- 20230222_ДХ: 35 
+--- В airports_l уже есть все данные, соответственно coordinates, coordinates_pair и airports_city_pairs 
+--- - это все лишние действия, которое созданы для дополнительной нагрузки и не более.
 
 with airports_l(airport_src,airport_dst) as (
 	select a.airport_code airport_src, a2.airport_code airport_dst
